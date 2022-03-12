@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.053" />
 
     <Button
-        android:id="@+id/b_signup"
+        android:id="@+id/bsignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/b_login" />
+        app:layout_constraintTop_toBottomOf="@+id/blogin" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -77,7 +77,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_username" />
 
     <Button
-        android:id="@+id/b_login"
+        android:id="@+id/blogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
