@@ -39,9 +39,9 @@ class NotificationsFragment : Fragment() {
         _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
         val root: View = binding.root
         val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+        //notificationsViewModel.text.observe(viewLifecycleOwner) {
+           // textView.text = it
+        //}
         binding.bsignup.setOnClickListener(Navigation.createNavigateOnClickListener
             (R.id.register_fragment, null))//指定跳轉頁面
         Log.d(TAG,"點擊註冊")
