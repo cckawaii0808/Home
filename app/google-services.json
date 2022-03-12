@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "727670137575",
+    "project_id": "home-ccplay",
+    "storage_bucket": "home-ccplay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727670137575:android:42a00edce0782dc1f6b842",
+        "android_client_info": {
+          "package_name": "com.ccplay.home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727670137575-s7tf79c9q730qjafgbluq38qak7m3jpv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVZbrOU1RHIgonozhhViDUaJwO1zAZ_Y8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727670137575-s7tf79c9q730qjafgbluq38qak7m3jpv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
