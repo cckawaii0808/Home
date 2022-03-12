@@ -11,28 +11,40 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="61dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="308dp"
-            android:text="暱稱"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-            app:layout_constraintHorizontal_bias="0.15"
+            android:id="@+id/textView6"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:text="密碼"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/signpassword"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="61dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="32dp"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
             android:text="帳號"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-            app:layout_constraintHorizontal_bias="0.15"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/signaccount"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:text="暱稱"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline7"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/signusername" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -41,46 +53,53 @@
             android:layout_marginTop="72dp"
             android:background="@drawable/common_google_signin_btn_icon_dark"
             android:src="?android:attr/listChoiceIndicatorSingle"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
-            android:layout_width="292dp"
-            android:layout_height="56dp"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="             請輸入6-12位字母或數字"
-            android:inputType="textPassword"
-            app:layout_constraintEnd_toStartOf="@+id/guideline6"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="293dp"
+            android:id="@+id/signpassword"
+            android:layout_width="0dp"
             android:layout_height="52dp"
             android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="            請輸入4-20位字母或數字"
-            android:inputType="textPersonName"
+            android:layout_marginEnd="8dp"
+            android:ems="15"
+            android:hint="請輸入6-12位字母或數字"
+            android:inputType="textPassword"
+            app:circularflow_radiusInDP="12dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline6"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/signaccount" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="292dp"
+            android:id="@+id/signusername"
+            android:layout_width="0dp"
             android:layout_height="52dp"
             android:layout_marginTop="12dp"
-            android:ems="10"
-            android:hint="            取個好聽的名字吧～ "
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:ellipsize="none"
+            android:ems="15"
+            android:hint="取個好聽的名字吧～ "
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            app:layout_constraintEnd_toStartOf="@+id/guideline6"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <EditText
+            android:id="@+id/signaccount"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="15"
+            android:hint="請輸入4-20位字母或數字"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toStartOf="@+id/guideline6"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toBottomOf="@+id/signusername" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline4"
@@ -107,13 +126,13 @@
             android:id="@+id/button"
             android:layout_width="239dp"
             android:layout_height="60dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="24dp"
             android:backgroundTint="#03A9F4"
             android:text="@string/送出"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+            app:layout_constraintTop_toBottomOf="@+id/signpassword" />
 
         <Button
             android:id="@+id/button2"
@@ -126,17 +145,12 @@
             app:layout_constraintTop_toTopOf="@+id/guideline4"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="61dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="36dp"
-            android:text="密碼"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-            app:layout_constraintHorizontal_bias="0.15"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="68dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
